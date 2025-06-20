@@ -23,6 +23,3 @@ app.include_router(public_product_routes.router)
 app.include_router(cart_routes.router)
 app.include_router(checkout_routes.router)
 app.include_router(order_routes.router)
-
-
-
