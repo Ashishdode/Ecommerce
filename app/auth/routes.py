@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
 from app.auth import models, schemas, utils
-from app.core.database import SessionLocal, Base, engine
+from app.core.database import SessionLocal
 from sqlalchemy.exc import IntegrityError
 from app.utils.email_utils import send_email
 from fastapi.security import OAuth2PasswordRequestForm
