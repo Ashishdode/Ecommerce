@@ -1,14 +1,12 @@
 from fastapi import FastAPI
 from app.auth import routes as auth_routes
 from app.core.database import engine
-from app.auth import models as auth_models
-from app.products import models as product_models, routes as product_routes
+from app.products import routes as product_routes
 from app.products import public_routes as public_product_routes
-from app.cart import models as cart_models, routes as cart_routes
-from app.orders import models as order_models
+from app.cart import routes as cart_routes
 from app.checkout import routes as checkout_routes
 from app.orders import routes as order_routes
-from app.auth.models import PasswordResetToken
+
 
 
 # auth_models.Base.metadata.create_all(bind=engine)
